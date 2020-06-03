@@ -12,8 +12,8 @@ describe('Send Mail Service', function() {
             let transporter = await NodeMailer.createTransport({
                 SES: new AWS.SES({
                     apiVersion: '2010-12-01',
-                    accessKeyId: 'AKIAIPMW5QILV3IR7ELQ',
-                    secretAccessKey: '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',
+                    accessKeyId: pocess.env.keyId,
+                    secretAccessKey: pocess.env.secretKey,
                     region: 'us-east-1'
                 }),
                 logger: true
