@@ -12,8 +12,8 @@ describe('Send Mail Service', function() {
                 port: 587,
                 secure: false, // upgrade later with STARTTLS
                 auth: {
-                    user: "alwaysopens@gopbn.com",
-                    pass: "CarbonTeqFB4ke"
+                    user: process.env.smtpUserName,
+                    pass: process.env.smtpPassword
                 }
             });
 
