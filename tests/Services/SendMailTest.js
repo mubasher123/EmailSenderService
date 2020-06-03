@@ -5,7 +5,6 @@ const NodeMailer = require('nodemailer');
 
 describe('Send Mail Service', function() {
     it('Should process the message without any error', async function() {
-        //ya29.GlugBk4fdqQcCvURXaBJDOa6RKGsWkvvfLNh8bzlxPf2rQelBkg_7LXrDf3Sngek_Z1Kf0rDmZauNPNsOstP3Mjlk1Dh018qlFkNuBz94SICgWAkBntAIxj46aVo
         this.timeout(40000);
         try {
             let transporter = NodeMailer.createTransport({
