@@ -11,8 +11,8 @@ describe('Send Mail Service', function() {
                 host:"smtp.office365.com",
                 port:"587",
                 auth: {
-                    user: "hithesh.puh@outlook.com",
-                    pass: "hithesh@"
+                    user: pocess.env.officeUserName,
+                    pass: pocess.env.officePassword
                 }
             });
             const verification = await transporter.verify();
